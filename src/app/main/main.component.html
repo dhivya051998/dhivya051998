@@ -1,0 +1,24 @@
+<div class="mainContent">
+<div class="home"></div>
+<div class="inputBox">
+    <div class="inputBox1">
+        <label>FROM</label>
+        <div (click)="showName()" class="fromVal" #fromVal>{{text}}</div>
+        <div class="allName" *ngIf="this.data.placeName1" >
+            <div *ngFor="let x of place" (click)="getVal($event)" class="placeName">{{x}}</div>
+        </div>
+    </div>
+    <div class="inputBox1">
+        <label>TO</label>
+        <div (click)="showName1()" class="toVal" #toVal>{{text1}}</div>
+        <div class="allName1" *ngIf="this.data.placeName2" >
+            <div *ngFor="let x of place1" (click)="getVal1($event)" class="placeName2">{{x}}</div>
+        </div>
+    </div>
+    <div class="inputBox1">
+        <label>DATE</label>
+        <input type="date" class="inputDate" #inputDate>
+    </div>
+    <button (click)="display()"> Search Buses</button>
+</div>
+</div>

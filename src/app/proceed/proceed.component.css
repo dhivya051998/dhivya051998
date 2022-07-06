@@ -1,0 +1,48 @@
+.proceedDiv{
+    height: 400px;
+    width: 400px;
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-rows: 1fr 60px 1fr;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+.proceed{
+    display:none;
+}
+.point{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.fare{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+button{
+    padding: 6px 115px 7px;
+    height: 40px;
+    font-size: 13px;
+    background-color: #d84e55;
+    color: #fff;
+    transition: .1s;
+    border: none;
+    outline: none;
+}
+.boaringFsize{
+    font-size: 19px;
+    font-weight: 700;
+    color: #3e3e52;
+}
+.changeFsize{
+    color: #5279d0;
+    font-size: 17px;
+    font-weight: 700;
+
+}

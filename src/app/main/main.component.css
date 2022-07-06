@@ -1,0 +1,99 @@
+.mainContent{
+    position: relative;
+}.home{
+    height:635px;
+   background-image: url(./redbus-web-banner.png);
+   background-repeat: no-repeat;
+   background-size:100% 100%;
+}
+.inputBox{
+    color: gray;
+    display: flex;
+    background-color: #ffffff;
+    position: absolute;
+    top: 48%;
+    left: 34%;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 18%);
+   
+}
+.inputBox1{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-left: 1px solid gray;
+    position: relative;
+    
+}
+input{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button{
+    border: none;
+    background-color: #d84f57;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #e9555d;
+}
+label{
+    font-size: 12px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.allName{
+    height: 110px;
+    width: 130px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    
+}
+.fromVal{
+    height: 20px;
+    width: 120px;
+    cursor: pointer;
+}
+.toVal{
+    height: 20px;
+    width: 120px;
+    cursor: pointer; 
+}
+.allName1{
+    height: 110px;
+    width: 130px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    
+}
+.placeName{
+    padding: 7px;
+}
+.placeName:hover{
+    background-color: #edeef1;
+}
+.placeName2{
+    padding: 7px;
+}
+.placeName2:hover{
+    background-color: #edeef1;
+}

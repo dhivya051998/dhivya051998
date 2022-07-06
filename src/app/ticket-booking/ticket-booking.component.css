@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto;
+}
+.heading{
+    background-color: #d84f57;
+    display: flex;
+}
+.headingContent{
+    width: 1280px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+.icon{
+    padding: 35px;
+    width: 78px;
+    background-image:url(./redbus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.borderStyle{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #ffffff;
+    margin-left: 20px;
+}
+.text{
+    color: #ffffff;
+   
+}
+.main_content{
+    height:auto;
+}

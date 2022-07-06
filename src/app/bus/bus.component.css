@@ -1,0 +1,57 @@
+.container{
+    width: 100wh;
+    display: grid;
+    grid-template-rows: 70px 580px;
+    grid-template-columns: 1fr;
+}
+.modify{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color:#f8f4f4;
+    padding-left: 10px;
+    position: sticky;
+    top: 0;
+}
+.busType{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
+}
+.busDetail{
+    width: 1150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto;
+
+}
+.title{
+    color: #7e7e8c;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 150px auto 150px;
+}
+.allTitle{
+    width: 825px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.found{
+    padding-left: 20px;
+}
+.allDetail{
+    display: flex;
+    justify-content: center;
+   
+}
+.f_text{
+    color: #3e3e52 !important;
+    font-weight: 700;
+    font-size: 16px;
+}
+.bus_item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="modify">
+        <div>tenkasi</div>
+        <span class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        <div>chennai</div>
+    </div>
+    <div class="busType">
+        <div></div>
+        <div class="busDetail">
+            <div class="title">
+                <div class="found"><span class="f_text">{{buscom.length}}</span>Buses found</div>
+                <div class="allTitle">
+                    <span>Departure</span>
+                    <span>Duration</span>
+                    <span>Arrival</span>
+                    <span>Ratings</span>
+                    <span>Fare</span>
+                </div>
+                <div>Seats Available</div>
+            </div>
+            <div class="allDetail">
+                <div class="bus_item">
+                    <app-bus-item [details]="details" *ngFor="let details of buscom"></app-bus-item>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+</div>

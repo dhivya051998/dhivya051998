@@ -1,0 +1,31 @@
+<div class="proceedDiv">
+    <div class="point">
+        <div class="title">
+            <div class="boaringFsize">Boarding & Dropping</div>
+            <div class="changeFsize">CHANGE</div>
+        </div>
+        <div class="title">
+            <div>tenkasi</div>
+            <div>{{ele.departure}}</div>
+        </div>
+        <div class="dropping title">
+            <div>chennai</div>
+            <div>{{ele.arrival}}</div>
+        </div>
+    </div>
+    <div class="title">
+            <div class="boaringFsize">sheat No</div>
+            <div>L{{dataele}}</div>
+    </div>
+    <div class="fare">
+        <div class="title boaringFsize">Fare Details</div>
+        <div class="title">
+            <div>Amount</div>
+            <div>{{ele.fare}}</div>
+        </div>
+        <div class="title">
+            <button (click)="hide($event,dataele)">PROOCEED TO BOOK</button>
+        </div>
+        
+    </div>
+</div>

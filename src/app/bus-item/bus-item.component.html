@@ -1,0 +1,50 @@
+<div routerLink="busTitle">
+    <div class="mainContainer">
+    <div class="topDetail">
+        <div class="busName">
+            <div class="image"></div>
+            <div class="f-size">{{details.busName|uppercase}}</div>
+            <div>{{details.busType}}</div>
+            <div>
+                <span class="material-symbols-outlined">
+                    ev_charger
+                    </span>
+                <span class="material-symbols-outlined">
+                    light_group
+                    </span>
+                    <span class="material-symbols-outlined">
+                        wifi
+                        </span>
+            </div>
+        </div>
+        <div class="busTime">
+            <div class="f-size">{{details.departure}}</div>
+            <div>{{details.duration}}</div>
+            <div>{{details.arrival}}</div>
+            <div class="star_icon"><div class="star_rating" appCustom><span class="material-symbols-outlined">
+                grade
+                </span>{{details.star}}</div>
+                {{details.rating}}</div>
+            <div class="f-size">{{details. fare|uppercase}}</div>
+        </div>
+        <div class="seatCount">
+            <div>{{details.seatAvailable}}</div>
+        </div>
+    </div>
+    <div class="bottomDetail">
+       <div class="bottomDetail1">
+        <div class="imagesAlign">Why <div class="image1"></div></div>
+        <div>Amenities</div>
+        <div>Bus Photos</div>
+        <div>Boarding & Dropping points</div>
+        <div>Reviews</div>
+        <div>Booking policies</div>
+        <div>Rest Stops</div>
+       </div>
+        <button (click)="showBox()"  appCustom>VIEW SEATS</button>
+    </div>
+</div>
+<div [ngClass]="{'seatBox':hide}">
+    <app-deck [decdetails]="details"></app-deck>
+</div>
+</div>

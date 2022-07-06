@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="box">
+        <div class="content1">
+            <div class="img"></div>
+        </div>
+        <div class="content2">
+                <div class="seat" *ngFor="let y of newArray; index as i" (click)="booking($event,i)">
+                    <div class="small"></div>
+                </div>
+           
+        </div>
+    </div>
+    <div class="seatdetail">
+        <p>SEAT LEGEND</p>
+        <div class="seatdetail1">
+            <div class="seatcolor available"></div>
+            <p>Available</p>
+        </div>
+        <div class="seatdetail1">
+            <div class="seatcolor unavailable"></div>
+            <p>Unavailable</p>
+        </div>
+    </div>
+    <div class="bookingBox1">
+        <app-proceed [ele]="decdetails" *ngIf="this.data.proceedShow" [dataele]="index" [element]="ele"></app-proceed>
+    </div>
+</div>
